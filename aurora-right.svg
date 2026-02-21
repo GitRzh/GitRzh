@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 800" width="60" height="800">
+  <defs>
+    <filter id="soft"><feGaussianBlur stdDeviation="4"/></filter>
+    <filter id="softer"><feGaussianBlur stdDeviation="8"/></filter>
+  </defs>
+  <rect width="60" height="800" fill="#0d0d0d"/>
+  <!-- wave 1 slow wide — offset start from left -->
+  <ellipse cx="30" cy="600" rx="35" ry="120" fill="#ffffff" fill-opacity="0.04" filter="url(#softer)">
+    <animate attributeName="cy" values="600;100;700;200;600" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="ry" values="120;155;85;140;120" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="fill-opacity" values="0.04;0.08;0.02;0.06;0.04" dur="10s" repeatCount="indefinite"/>
+  </ellipse>
+  <!-- wave 2 medium moving down -->
+  <ellipse cx="30" cy="150" rx="28" ry="90" fill="#ffffff" fill-opacity="0.07" filter="url(#soft)">
+    <animate attributeName="cy" values="150;700;50;650;150" dur="6.5s" repeatCount="indefinite"/>
+    <animate attributeName="ry" values="90;125;68;108;90" dur="6.5s" repeatCount="indefinite"/>
+    <animate attributeName="fill-opacity" values="0.07;0.14;0.04;0.11;0.07" dur="6.5s" repeatCount="indefinite"/>
+  </ellipse>
+  <!-- wave 3 fast small bright moving down -->
+  <ellipse cx="30" cy="700" rx="20" ry="60" fill="#ffffff" fill-opacity="0.12" filter="url(#soft)">
+    <animate attributeName="cy" values="700;50;750;100;700" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="ry" values="60;82;38;72;60" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="fill-opacity" values="0.12;0.19;0.05;0.14;0.12" dur="4.5s" repeatCount="indefinite"/>
+  </ellipse>
+  <!-- wave 4 very slow wash -->
+  <ellipse cx="30" cy="350" rx="35" ry="280" fill="#ffffff" fill-opacity="0.025" filter="url(#softer)">
+    <animate attributeName="cy" values="350;450;280;420;350" dur="13s" repeatCount="indefinite"/>
+    <animate attributeName="fill-opacity" values="0.025;0.05;0.01;0.04;0.025" dur="13s" repeatCount="indefinite"/>
+  </ellipse>
+  <!-- wave 5 counter -->
+  <ellipse cx="30" cy="80" rx="25" ry="70" fill="#cccccc" fill-opacity="0.06" filter="url(#soft)">
+    <animate attributeName="cy" values="80;720;50;680;80" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="fill-opacity" values="0.06;0.12;0.03;0.09;0.06" dur="8s" repeatCount="indefinite"/>
+  </ellipse>
+  <!-- wave 6 sharp bright streak moving down -->
+  <ellipse cx="30" cy="0" rx="12" ry="35" fill="#ffffff" fill-opacity="0.15" filter="url(#soft)">
+    <animate attributeName="cy" values="0;800;50;750;0" dur="5.5s" repeatCount="indefinite"/>
+    <animate attributeName="fill-opacity" values="0.15;0.02;0.17;0.03;0.15" dur="5.5s" repeatCount="indefinite"/>
+  </ellipse>
+</svg>
