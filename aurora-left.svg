@@ -1,40 +1,63 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 800" width="60" height="800">
-  <defs>
-    <filter id="soft"><feGaussianBlur stdDeviation="4"/></filter>
-    <filter id="softer"><feGaussianBlur stdDeviation="8"/></filter>
-  </defs>
   <rect width="60" height="800" fill="#0d0d0d"/>
-  <!-- wave 1 slow wide low opacity -->
-  <ellipse cx="30" cy="200" rx="35" ry="120" fill="#ffffff" fill-opacity="0.04" filter="url(#softer)">
-    <animate attributeName="cy" values="200;600;100;500;200" dur="9s" repeatCount="indefinite"/>
-    <animate attributeName="ry" values="120;160;90;140;120" dur="9s" repeatCount="indefinite"/>
-    <animate attributeName="fill-opacity" values="0.04;0.08;0.02;0.06;0.04" dur="9s" repeatCount="indefinite"/>
-  </ellipse>
-  <!-- wave 2 medium speed mid opacity -->
-  <ellipse cx="30" cy="500" rx="28" ry="90" fill="#ffffff" fill-opacity="0.07" filter="url(#soft)">
-    <animate attributeName="cy" values="500;150;650;100;500" dur="6s" repeatCount="indefinite"/>
-    <animate attributeName="ry" values="90;130;70;110;90" dur="6s" repeatCount="indefinite"/>
-    <animate attributeName="fill-opacity" values="0.07;0.13;0.04;0.10;0.07" dur="6s" repeatCount="indefinite"/>
-  </ellipse>
-  <!-- wave 3 fast small bright -->
-  <ellipse cx="30" cy="100" rx="20" ry="60" fill="#ffffff" fill-opacity="0.12" filter="url(#soft)">
-    <animate attributeName="cy" values="100;750;200;700;100" dur="4s" repeatCount="indefinite"/>
-    <animate attributeName="ry" values="60;80;40;70;60" dur="4s" repeatCount="indefinite"/>
-    <animate attributeName="fill-opacity" values="0.12;0.18;0.06;0.15;0.12" dur="4s" repeatCount="indefinite"/>
-  </ellipse>
-  <!-- wave 4 very slow full height wash -->
-  <ellipse cx="30" cy="400" rx="35" ry="280" fill="#ffffff" fill-opacity="0.025" filter="url(#softer)">
-    <animate attributeName="cy" values="400;300;500;350;400" dur="14s" repeatCount="indefinite"/>
-    <animate attributeName="fill-opacity" values="0.025;0.05;0.01;0.04;0.025" dur="14s" repeatCount="indefinite"/>
-  </ellipse>
-  <!-- wave 5 counter moving -->
-  <ellipse cx="30" cy="650" rx="25" ry="70" fill="#cccccc" fill-opacity="0.06" filter="url(#soft)">
-    <animate attributeName="cy" values="650;50;700;80;650" dur="7.5s" repeatCount="indefinite"/>
-    <animate attributeName="fill-opacity" values="0.06;0.11;0.03;0.09;0.06" dur="7.5s" repeatCount="indefinite"/>
-  </ellipse>
-  <!-- wave 6 sharp bright streak -->
-  <ellipse cx="30" cy="750" rx="12" ry="35" fill="#ffffff" fill-opacity="0.15" filter="url(#soft)">
-    <animate attributeName="cy" values="750;0;800;50;750" dur="5s" repeatCount="indefinite"/>
-    <animate attributeName="fill-opacity" values="0.15;0.02;0.18;0.03;0.15" dur="5s" repeatCount="indefinite"/>
-  </ellipse>
+
+  <!-- wave 1 — slowest, darkest -->
+  <path fill="#1a1a1a" fill-opacity="0.9">
+    <animate attributeName="d" dur="8s" repeatCount="indefinite"
+      values="
+        M0,0 C20,80 40,160 20,240 C0,320 40,400 20,480 C0,560 30,640 10,720 L10,800 L0,800 Z;
+        M0,0 C30,80 10,160 30,240 C50,320 10,400 30,480 C50,560 20,640 40,720 L40,800 L0,800 Z;
+        M0,0 C20,80 40,160 20,240 C0,320 40,400 20,480 C0,560 30,640 10,720 L10,800 L0,800 Z
+      "/>
+  </path>
+
+  <!-- wave 2 -->
+  <path fill="#262626" fill-opacity="0.85">
+    <animate attributeName="d" dur="6s" repeatCount="indefinite"
+      values="
+        M0,0 C30,100 50,200 25,300 C0,400 50,500 25,600 C0,700 40,750 20,800 L0,800 Z;
+        M0,0 C10,100 40,200 15,300 C-10,400 40,500 15,600 C-10,700 30,750 10,800 L0,800 Z;
+        M0,0 C30,100 50,200 25,300 C0,400 50,500 25,600 C0,700 40,750 20,800 L0,800 Z
+      "/>
+  </path>
+
+  <!-- wave 3 -->
+  <path fill="#333333" fill-opacity="0.75">
+    <animate attributeName="d" dur="5s" repeatCount="indefinite"
+      values="
+        M0,50 C35,130 55,230 30,330 C5,430 45,530 30,630 C15,730 45,770 30,800 L0,800 Z;
+        M0,50 C15,130 45,230 20,330 C-5,430 35,530 20,630 C5,730 35,770 20,800 L0,800 Z;
+        M0,50 C35,130 55,230 30,330 C5,430 45,530 30,630 C15,730 45,770 30,800 L0,800 Z
+      "/>
+  </path>
+
+  <!-- wave 4 -->
+  <path fill="#444444" fill-opacity="0.6">
+    <animate attributeName="d" dur="4s" repeatCount="indefinite"
+      values="
+        M0,100 C40,180 60,280 35,380 C10,480 50,570 35,670 C20,770 50,790 40,800 L0,800 Z;
+        M0,100 C20,180 50,280 25,380 C0,480 40,570 25,670 C10,770 40,790 30,800 L0,800 Z;
+        M0,100 C40,180 60,280 35,380 C10,480 50,570 35,670 C20,770 50,790 40,800 L0,800 Z
+      "/>
+  </path>
+
+  <!-- wave 5 — lightest, fastest -->
+  <path fill="#666666" fill-opacity="0.35">
+    <animate attributeName="d" dur="3s" repeatCount="indefinite"
+      values="
+        M0,150 C45,230 60,330 40,430 C20,530 55,610 45,710 C35,780 55,800 50,800 L0,800 Z;
+        M0,150 C25,230 50,330 30,430 C10,530 45,610 35,710 C25,780 45,800 40,800 L0,800 Z;
+        M0,150 C45,230 60,330 40,430 C20,530 55,610 45,710 C35,780 55,800 50,800 L0,800 Z
+      "/>
+  </path>
+
+  <!-- wave 6 — white shimmer -->
+  <path fill="#aaaaaa" fill-opacity="0.12">
+    <animate attributeName="d" dur="2.5s" repeatCount="indefinite"
+      values="
+        M0,200 C50,280 60,370 45,470 C30,570 58,640 50,740 C45,790 60,800 60,800 L0,800 Z;
+        M0,200 C30,280 55,370 38,470 C21,570 52,640 44,740 C39,790 55,800 55,800 L0,800 Z;
+        M0,200 C50,280 60,370 45,470 C30,570 58,640 50,740 C45,790 60,800 60,800 L0,800 Z
+      "/>
+  </path>
 </svg>
