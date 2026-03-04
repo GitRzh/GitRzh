@@ -4,7 +4,7 @@
 <img src="https://cdn.jsdelivr.net/gh/GitRzh/GitRzh@main/side.gif" width="60" height="750" style="display:block" />
 </td>
 <td valign="top" align="center" style="padding:0;border:none">
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&duration=3000&pause=1000&color=AAAAAA&center=true&vCenter=true&multiline=true&width=500&height=80&lines=%24+whoami;raz+%E2%80%94+building+things...+maybe." alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&duration=3000&pause=1000&color=AAAAAA&center=true&vCenter=true&multiline=true&width=500&height=80&lines=%24whoami;a+donut+%E2%80%94+building+things...+maybe." alt="Typing SVG" />
 
 ![visitors](https://komarev.com/ghpvc/?username=GitRzh&style=for-the-badge&color=1a1a1a&label=VISITORS&labelColor=111111)
 
