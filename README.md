@@ -16,7 +16,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d0d0d,40:555555,60:555555,100:0d0d0d&height=1" width="70%" />
 
-<img src="https://streak-stats.demolab.com?user=GitRzh&hide_border=true&background=0d0d0d&stroke=2a2a2a&ring=555555&fire=777777&currStreakLabel=777777&sideLabels=555555&dates=444444&currStreakNum=aaaaaa&sideNums=888888&type=svg" />
+<img src="https://github-readme-streak-stats-eight.vercel.app/?user=GitRzh&hide_border=true&background=0d0d0d&stroke=2a2a2a&ring=555555&fire=777777&currStreakLabel=777777&sideLabels=555555&dates=444444&currStreakNum=aaaaaa&sideNums=888888&type=svg" />
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d0d0d,40:555555,60:555555,100:0d0d0d&height=1" width="70%" />
 
