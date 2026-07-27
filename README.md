@@ -6,7 +6,6 @@
 <td valign="top" align="center" style="padding:0;border:none">
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&duration=3000&pause=1000&color=AAAAAA&center=true&vCenter=true&multiline=true&width=500&height=80&lines=%24whoami;a+donut+%E2%80%94+building+things...+maybe." alt="Typing SVG" />
 
-![visitors](https://komarev.com/ghpvc/?username=GitRzh&style=for-the-badge&color=1a1a1a&label=VISITORS&labelColor=111111)
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d0d0d,40:555555,60:555555,100:0d0d0d&height=1" width="70%" />
 
