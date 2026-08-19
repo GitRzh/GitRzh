@@ -10,6 +10,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d0d0d,40:555555,60:555555,100:0d0d0d&height=1" width="70%" />
 
+![Linux](https://img.shields.io/badge/Linux-1a1a1a?style=for-the-badge&logo=linux&logoColor=888888)
 ![Python](https://img.shields.io/badge/Python-1a1a1a?style=for-the-badge&logo=python&logoColor=888888)
 ![FastAPI](https://img.shields.io/badge/FastAPI-1a1a1a?style=for-the-badge&logo=fastapi&logoColor=888888)
 
