@@ -20,7 +20,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d0d0d,40:555555,60:555555,100:0d0d0d&height=1" width="70%" />
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=GitRzh&bg_color=0d0d0d&color=888888&line=555555&point=cccccc&area_color=1a1a1a&area=true&hide_border=true&custom_title=Brick%20by%20Brick&title_color=999999&days=31&radius=4&v=2" width="100%" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=GitRzh&bg_color=0d0d0d&color=888888&line=555555&point=cccccc&area_color=1a1a1a&area=true&hide_border=true&custom_title=Brick%20by%20Brick&title_color=999999&days=31&radius=4" width="100%" />
 </td>
 <td width="60" valign="top" style="padding:0;border:none">
 <img src="https://cdn.jsdelivr.net/gh/GitRzh/GitRzh@main/side.gif" width="60" height="750" style="display:block" />
