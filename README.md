@@ -22,6 +22,8 @@
 
 <img src="./stats-badge/stats-card.svg" width="800" />
 
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&pause=100000&color=AAAAAA&center=true&vCenter=true&width=500&height=30&lines=brick+by+brick" alt="brick by brick" />
+
 </td>
 <td width="60" valign="top" style="padding:0;border:none">
 <img src="https://cdn.jsdelivr.net/gh/GitRzh/GitRzh@main/side.gif" width="60" height="750" style="display:block" />
