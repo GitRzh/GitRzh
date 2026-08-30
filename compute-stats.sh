@@ -61,15 +61,15 @@ cat > stats-badge/stats-card.svg << EOF
 
   <rect class="box" x="10" y="10" width="245" height="180"/>
   <text class="value" x="132" y="100">+${TOTAL_ADD}</text>
-  <text class="label" x="132" y="135">LINES ADDED</text>
+  <text class="label" x="132" y="135">Lines Added</text>
 
   <rect class="box" x="277" y="10" width="245" height="180"/>
   <text class="value" x="400" y="100">-${TOTAL_DEL}</text>
-  <text class="label" x="400" y="135">LINES DELETED</text>
+  <text class="label" x="400" y="135">Lines Deleted</text>
 
   <rect class="box" x="545" y="10" width="245" height="180"/>
   <text class="value" x="668" y="100">${TOTAL_COMMITS}</text>
-  <text class="label" x="668" y="135">TOTAL COMMITS</text>
+  <text class="label" x="668" y="135">Total Commits</text>
 </svg>
 EOF
 
