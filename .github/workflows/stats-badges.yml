@@ -1,0 +1,27 @@
+name: Repo Stats Badges
+
+on:
+  schedule:
+    - cron: "0 3 * * *"   # daily, 3am UTC
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compute stats
+        run: |
+          chmod +x ./compute-stats.sh
+          ./compute-stats.sh
+
+      - name: Commit & push
+        run: |
+          git config user.name github-actions
+          git config user.email actions@github.com
+          git add -f stats-badge/*.json stats-badge/*.svg
+          git commit -m "Update stats badges" || exit 0
+          git push
