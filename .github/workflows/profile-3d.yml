@@ -12,21 +12,27 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
+      - name: Write theme config
+        run: |
+          mkdir -p profile-3d-contrib
+          cat > profile-3d-contrib/setting.json << 'EOF'
+          {
+            "type": "bar",
+            "colors": {
+              "back": "#0d0d0d00",
+              "grid": "#2a2a2a",
+              "text": "#888888",
+              "meet": "#555555",
+              "high": "#aaaaaa"
+            }
+          }
+          EOF
+
       - uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
-          SETTING_JSON: |
-            {
-              "type": "bar",
-              "colors": {
-                "back": "#0d0d0d00",
-                "grid": "#2a2a2a",
-                "text": "#888888",
-                "meet": "#555555",
-                "high": "#aaaaaa"
-              }
-            }
+          SETTING_JSON: profile-3d-contrib/setting.json
       - name: Commit & push
         run: |
           git config user.name github-actions
