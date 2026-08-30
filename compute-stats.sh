@@ -50,26 +50,26 @@ cat > stats-badge/commits.json << EOF
 EOF
 
 cat > stats-badge/stats-card.svg << EOF
-<svg width="900" height="150" viewBox="0 0 900 150" xmlns="http://www.w3.org/2000/svg">
+<svg width="800" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
   <style>
     .bg { fill: #0d0d0d; }
     .box { fill: #0d0d0d; stroke: #2a2a2a; stroke-width: 1; rx: 6; }
-    .value { font-family: 'JetBrains Mono', monospace; font-size: 32px; fill: #aaaaaa; font-weight: bold; text-anchor: middle; }
-    .label { font-family: 'JetBrains Mono', monospace; font-size: 13px; fill: #888888; text-anchor: middle; letter-spacing: 1px; }
+    .value { font-family: 'Segoe UI', Ubuntu, sans-serif; font-size: 40px; fill: #aaaaaa; font-weight: 700; text-anchor: middle; }
+    .label { font-family: 'Segoe UI', Ubuntu, sans-serif; font-size: 14px; fill: #888888; text-anchor: middle; letter-spacing: 1px; }
   </style>
-  <rect class="bg" width="900" height="150"/>
+  <rect class="bg" width="800" height="200"/>
 
-  <rect class="box" x="10" y="10" width="280" height="130"/>
-  <text class="value" x="150" y="70">+${TOTAL_ADD}</text>
-  <text class="label" x="150" y="100">LINES ADDED</text>
+  <rect class="box" x="10" y="10" width="245" height="180"/>
+  <text class="value" x="132" y="100">+${TOTAL_ADD}</text>
+  <text class="label" x="132" y="135">LINES ADDED</text>
 
-  <rect class="box" x="310" y="10" width="280" height="130"/>
-  <text class="value" x="450" y="70">-${TOTAL_DEL}</text>
-  <text class="label" x="450" y="100">LINES DELETED</text>
+  <rect class="box" x="277" y="10" width="245" height="180"/>
+  <text class="value" x="400" y="100">-${TOTAL_DEL}</text>
+  <text class="label" x="400" y="135">LINES DELETED</text>
 
-  <rect class="box" x="610" y="10" width="280" height="130"/>
-  <text class="value" x="750" y="70">${TOTAL_COMMITS}</text>
-  <text class="label" x="750" y="100">TOTAL COMMITS</text>
+  <rect class="box" x="545" y="10" width="245" height="180"/>
+  <text class="value" x="668" y="100">${TOTAL_COMMITS}</text>
+  <text class="label" x="668" y="135">TOTAL COMMITS</text>
 </svg>
 EOF
 
