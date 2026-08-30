@@ -1,0 +1,21 @@
+<svg width="900" height="150" viewBox="0 0 900 150" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg { fill: #0d0d0d; }
+    .box { fill: #0d0d0d; stroke: #2a2a2a; stroke-width: 1; rx: 6; }
+    .value { font-family: 'JetBrains Mono', monospace; font-size: 32px; fill: #aaaaaa; font-weight: bold; text-anchor: middle; }
+    .label { font-family: 'JetBrains Mono', monospace; font-size: 13px; fill: #888888; text-anchor: middle; letter-spacing: 1px; }
+  </style>
+  <rect class="bg" width="900" height="150"/>
+
+  <rect class="box" x="10" y="10" width="280" height="130"/>
+  <text class="value" x="150" y="70">+937512</text>
+  <text class="label" x="150" y="100">LINES ADDED</text>
+
+  <rect class="box" x="310" y="10" width="280" height="130"/>
+  <text class="value" x="450" y="70">-737373</text>
+  <text class="label" x="450" y="100">LINES DELETED</text>
+
+  <rect class="box" x="610" y="10" width="280" height="130"/>
+  <text class="value" x="750" y="70">295</text>
+  <text class="label" x="750" y="100">TOTAL COMMITS</text>
+</svg>
