@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+ORIGINAL_DIR=$(pwd)
 USERNAME="GitRzh"
 TOTAL_ADD=0
 TOTAL_DEL=0
@@ -33,7 +34,7 @@ for repo in $REPOS; do
   fi
 done
 
-cd -
+cd "$ORIGINAL_DIR"
 mkdir -p stats-badge
 
 cat > stats-badge/lines-added.json << EOF
