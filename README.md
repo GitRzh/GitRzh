@@ -20,7 +20,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d0d0d,40:555555,60:555555,100:0d0d0d&height=1" width="70%" />
 
-<img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" />
+<img src="./profile-3d-contrib/profile-customize.svg" width="100%" />
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d0d0d,40:555555,60:555555,100:0d0d0d&height=1" width="70%" />
 
